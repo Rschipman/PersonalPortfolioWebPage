@@ -1,0 +1,79 @@
+/*  Navigation bar background color */
+.topnav {
+  background-color: #f782a3;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+/*  Styling links inside of navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*  Change color on link on hover */
+.topnav a:hover {
+  background-color: #fff4f3;
+  color: navy;
+}
+
+/*  Add color to active link */
+.topnav a.active {
+  background-color: ffa7a6;
+}
+
+/* Welcome section  */
+#welcome-section {
+  height: 50vh;
+  width: 100vw;
+  background: #ffdbdb;
+}
+
+.text {
+  margin: auto;
+  width: 50%;
+  padding: 10%;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+
+/*  Footer Menu */
+#footer {
+  background-color: #f782a3;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+
+#footer li {
+  list-style-type: none;
+}
+#footer a {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 14px 16px;
+  color: #0f0d0d;
+}
+
+/* footer contact tag */
+.tagline {
+  float: right;
+  padding: 2%;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
