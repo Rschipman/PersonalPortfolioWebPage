@@ -70,7 +70,7 @@ body {
 }
 
 /* project section */
-#project-section {
+#projects {
   z-index: 1;
 }
 .projects-title {
@@ -83,12 +83,21 @@ body {
 .row {
   padding: 0 15px;
 }
+.project-tile {
+  background-color: #f0abbfaf;
+  border-radius: 5%;
+}
 .project-tile a {
   text-decoration: none;
 }
 .project-tile img {
   width: 100%;
   margin: auto;
+}
+.project-tile h2,
+p {
+  text-align: center;
+  color: navy;
 }
 
 /*  Footer Menu */
@@ -122,9 +131,9 @@ body {
 
 /* Setting grid view of projects with media queary */
 @media (min-width: 500px) {
-  .project-column {
-    width: 33.33%;
-    float: left;
+  .project-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
